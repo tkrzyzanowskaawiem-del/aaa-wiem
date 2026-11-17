@@ -65,7 +65,12 @@ artworks.forEach(art => {
 
   b.innerHTML = `
     <span class="art-frame">
-      <img loading="lazy" src="${commons(art.file)}" alt="${art.title} — ${art.artist}">
+      
+<img loading="lazy"
+     src="${commons(art.file)}"
+     alt="${art.title} — ${art.artist}"
+     onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('missing-art');">
+
       <span class="hover-hint">Poznaj historię <span aria-hidden="true">↗</span></span>
     </span>
     <span class="art-meta">
