@@ -29,3 +29,8 @@
 .hero-note strong {
   display: none !important;
 }
+
+.breadcrumb,
+.breadcrumbs {
+  display: none !important;
+}
