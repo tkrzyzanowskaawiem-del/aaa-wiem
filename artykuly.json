@@ -1,394 +1,82 @@
 [
   {
-    "slug": "dlaczego-upadl-mur-berlinski",
-    "title": "Dlaczego upadł Mur Berliński?",
-    "category": "Historia",
-    "lead": "Mur, który przez 28 lat dzielił rodziny i ulice, stracił swoją moc w jedną listopadową noc. Nie stało się to jednak przez jedno przejęzyczenie.",
-    "sections": [
-      [
-        "Po co w ogóle powstał mur?",
-        "Po II wojnie światowej Niemcy podzielono na strefy okupacyjne, a później na dwa państwa: RFN na zachodzie i NRD na wschodzie. Berlin, choć leżał w NRD, także był podzielony. Wielu mieszkańców NRD wyjeżdżało przez Berlin Zachodni, szukając swobody i lepszych perspektyw. Władze NRD w sierpniu 1961 roku zamknęły granicę, a następnie rozbudowały system muru, zasieków i posterunków. Jego zadaniem było przede wszystkim zatrzymanie własnych obywateli."
-      ],
-      [
-        "Dlaczego system zaczął się chwiać?",
-        "W latach 80. w NRD narastały niezadowolenie gospodarcze i żądania swobód obywatelskich. Reformy Michaiła Gorbaczowa w ZSRR osłabiły przekonanie, że Moskwa zawsze obroni komunistyczne rządy. W Polsce sukces „Solidarności” w wyborach czerwcowych 1989 roku pokazał, że zmiana jest możliwa. Tymczasem tysiące obywateli NRD wyjeżdżało przez inne państwa, zwłaszcza Węgry. Jesienią demonstracje w Lipsku i Berlinie przyciągały coraz większe tłumy."
-      ],
-      [
-        "Co wydarzyło się 9 listopada?",
-        "Na konferencji prasowej rzecznik władz NRD Günter Schabowski mówił o nowych zasadach podróżowania. Zapytany, od kiedy obowiązują, odpowiedział, że — według jego wiedzy — natychmiast. Wiadomość szybko dotarła do mieszkańców. Tłumy ruszyły do przejść granicznych, a strażnicy, pozbawieni jasnych rozkazów, ostatecznie otworzyli bariery. Pierwszym otwartym przejściem było Bornholmer Straße."
-      ],
-      [
-        "Czy Niemcy zjednoczyły się tej samej nocy?",
-        "Nie. Otwarcie granicy nastąpiło 9 listopada 1989 roku, ale formalne zjednoczenie Niemiec dopiero 3 października 1990 roku. Rozbieranie muru również trwało miesiące. Noc listopadowa stała się jednak symbolem końca podziału Europy podczas zimnej wojny."
-      ]
-    ],
-    "summary": "Mur nie upadł tylko przez pomyłkę na konferencji. Decydujące były lata presji społecznej, kryzys NRD i zmiany w całej Europie.",
-    "sources": [
-      [
-        "Fundacja Muru Berlińskiego",
-        "https://www.stiftung-berliner-mauer.de/en/topics/berlin-wall"
-      ],
-      [
-        "Miasto Berlin – otwarcie granicy",
-        "https://www.berlin.de/en/history/8482274-8619314-opening-and-fall-of-the-berlin-wall.en.html"
-      ]
-    ],
-    "photo": "Archiwalna fotografia tłumów na przejściu Bornholmer Straße w listopadzie 1989 r.; szukać w zasobach Bundesarchiv/Wikimedia Commons, sprawdzić licencję."
+    "slug": "amnezja-dziecieca",
+    "title": "Dlaczego nie pamiętamy pierwszych lat życia?",
+    "category": "Nauka",
+    "description": "Możesz pamiętać pierwszy dzień szkoły, ale raczej nie własne pierwsze urodziny. Dlaczego mózg zostawia taką lukę?",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&auto=format&fit=crop",
+    "featured": false
   },
   {
     "slug": "czym-byl-prl",
     "title": "Czym właściwie był PRL?",
     "category": "Historia",
-    "lead": "Kartki na żywność, wielkie osiedla i „Solidarność” — wszystkie te obrazy kojarzą się z PRL. Ale czym naprawdę był ten okres?",
-    "sections": [
-      [
-        "Co oznacza skrót PRL?",
-        "PRL to Polska Rzeczpospolita Ludowa — oficjalna nazwa państwa od 1952 do końca 1989 roku. Potocznie określa się tak również cały okres komunistycznych rządów od 1944/1945 roku. Po II wojnie światowej Polska znalazła się w radzieckiej strefie wpływów. Władze komunistyczne przejęły kontrolę nad państwem, a opozycja nie mogła swobodnie rywalizować o władzę."
-      ],
-      [
-        "Czy odbywały się wybory?",
-        "Tak, ale przez większość okresu nie były wolną rywalizacją polityczną, jaką znamy dziś. Kluczową rolę odgrywała Polska Zjednoczona Partia Robotnicza (PZPR). Działała cenzura, a służby bezpieczeństwa inwigilowały i represjonowały przeciwników systemu. Nie oznacza to, że wszyscy mieszkańcy żyli identycznie — doświadczenia zależały od dekady, miejsca zamieszkania i sytuacji rodziny."
-      ],
-      [
-        "Jak wyglądała codzienność?",
-        "Państwo kontrolowało znaczną część gospodarki, zakłady pracy i ceny. Powstawały szkoły, osiedla, szpitale i fabryki, a wielu ludzi przenosiło się ze wsi do miast. Jednocześnie występowały niedobory towarów, kolejki, niska jakość części produktów i problemy mieszkaniowe. W latach 80. kartki reglamentowały m.in. wybrane produkty spożywcze. Dla części osób PRL to wspomnienie młodości i bliskich, co nie zmienia oceny ograniczeń politycznych systemu."
-      ],
-      [
-        "Jak skończył się PRL?",
-        "Ważną rolę odegrały protesty społeczne, zwłaszcza powstanie „Solidarności” w 1980 roku. W 1981 roku wprowadzono stan wojenny. Kryzys gospodarczy i presja społeczna doprowadziły do rozmów Okrągłego Stołu w 1989 roku, a następnie częściowo wolnych wyborów 4 czerwca. Pod koniec roku przywrócono nazwę Rzeczpospolita Polska."
-      ]
-    ],
-    "summary": "PRL był państwem z dominacją partii komunistycznej, ograniczoną wolnością polityczną i gospodarką centralnie planowaną. Jego historia obejmuje zarówno codzienne życie milionów ludzi, jak i walkę o prawa obywatelskie.",
-    "sources": [
-      [
-        "IPN – PRL i przemiany 1989",
-        "https://polskiemiesiace.ipn.gov.pl/mie/wszystkie-wydarzenia/czerwiec-1989/polska/historia/117922%2CPRL-Polska-Rzeczpospolita-Ludowa.html"
-      ],
-      [
-        "IPN – wybory w PRL",
-        "https://edukacja.ipn.gov.pl/edu/oben/szczecin/wystawy-o-regionie/wystawy-do-wypozyczenia/111767%2CWybory-i-referenda-w-PRL-w-latach-19461989.html"
-      ]
-    ],
-    "photo": "Autentyczna fotografia ulicy lub sklepu w Polsce lat 70.–80., np. Narodowe Archiwum Cyfrowe; sprawdzić prawa do reprodukcji."
-  },
-  {
-    "slug": "lewica-a-prawica",
-    "title": "Czym różni się lewica od prawicy?",
-    "category": "Polityka",
-    "lead": "Dwa słowa, które słyszymy codziennie w wiadomościach. Czy naprawdę da się nimi opisać wszystkie poglądy?",
-    "sections": [
-      [
-        "Skąd te nazwy?",
-        "Określenia „lewica” i „prawica” wywodzą się z czasów rewolucji francuskiej. W zgromadzeniu politycznym zwolennicy większych zmian i przeciwnicy dawnego porządku zasiadali zwykle po lewej stronie, a obrońcy tradycyjnych instytucji po prawej. Z czasem nazwy zaczęły oznaczać szersze rodziny idei."
-      ],
-      [
-        "Z czym najczęściej kojarzy się lewica?",
-        "Lewicowe nurty zwykle mocniej akcentują zmniejszanie nierówności społecznych, ochronę pracowników, usługi publiczne i przeciwdziałanie dyskryminacji. W gospodarce mogą popierać większą redystrybucję przez podatki, choć różnią się w podejściu do rynku. Socjaldemokracja nie jest tym samym co komunizm."
-      ],
-      [
-        "A prawica?",
-        "Prawicowe nurty często podkreślają znaczenie tradycji, ciągłości instytucji, wspólnoty narodowej lub religii. Część popiera niższe podatki i większą swobodę przedsiębiorczości, ale istnieją też nurty prawicowe opowiadające się za silną rolą państwa w gospodarce. Konserwatyzm nie oznacza automatycznie skrajnego nacjonalizmu."
-      ],
-      [
-        "Dlaczego ten podział bywa mylący?",
-        "Poglądy nie układają się na jednej prostej. Ktoś może popierać liberalną gospodarkę i jednocześnie progresywne prawa obyczajowe; ktoś inny — szeroką pomoc socjalną i tradycyjne normy społeczne. Partie w różnych krajach inaczej rozumieją te same etykiety. Dlatego najlepiej pytać o konkretne stanowisko w sprawie podatków, praw obywatelskich, edukacji czy polityki zagranicznej."
-      ]
-    ],
-    "summary": "Lewica i prawica to skróty pomocne w rozmowie o polityce, ale nie zastąpią sprawdzania konkretnych programów i decyzji.",
-    "sources": [
-      [
-        "Oxford University Press – pochodzenie podziału",
-        "https://academic.oup.com/book/44905/chapter-abstract/384749442"
-      ],
-      [
-        "Encyclopaedia Britannica – political spectrum",
-        "https://www.britannica.com/topic/political-spectrum"
-      ]
-    ],
-    "photo": "Fotografia sali parlamentarnej lub historycznej sali obrad; bez sugerowania, że konkretna współczesna partia reprezentuje całą lewicę/prawicę."
-  },
-  {
-    "slug": "parlament-europejski",
-    "title": "Co naprawdę robi Parlament Europejski?",
-    "category": "Polityka",
-    "lead": "Europosłowie nie tylko przemawiają i głosują. Współdecydują o prawie, które wpływa na codzienne życie mieszkańców Unii.",
-    "sections": [
-      [
-        "Kogo reprezentuje?",
-        "Parlament Europejski jest instytucją Unii Europejskiej wybieraną bezpośrednio przez obywateli państw członkowskich co pięć lat. Europosłowie organizują się przede wszystkim w grupy polityczne, a nie według narodowości. Parlament obraduje plenarnie w Strasburgu i pracuje także w Brukseli."
-      ],
-      [
-        "Czy sam tworzy unijne prawo?",
-        "Najczęściej nie sam. Komisja Europejska przedstawia projekt, a Parlament i Rada Unii Europejskiej — reprezentująca rządy państw — negocjują jego brzmienie i przyjmują przepisy. To zwykła procedura ustawodawcza. Parlament może proponować poprawki i odrzucić projekt. W pewnych obszarach obowiązują inne procedury, więc jego uprawnienia nie zawsze są takie same."
-      ],
-      [
-        "Co z pieniędzmi?",
-        "Parlament wraz z Radą przyjmuje roczny budżet UE. Kontroluje też, jak wydawane są środki, m.in. oceniając wykonanie budżetu przez Komisję. Nie decyduje jednak samodzielnie o każdym krajowym wydatku finansowanym z funduszy europejskich."
-      ],
-      [
-        "Kto kontroluje Komisję Europejską?",
-        "Parlament wybiera przewodniczącego Komisji Europejskiej na podstawie propozycji Rady Europejskiej i zatwierdza cały skład Komisji. Może zadawać pytania, organizować przesłuchania i w szczególnej procedurze doprowadzić do odwołania całej Komisji."
-      ],
-      [
-        "Co to znaczy dla nas?",
-        "Unijne przepisy mogą dotyczyć m.in. ochrony konsumentów, środowiska, rynku cyfrowego i praw pasażerów. Nie wszystkie decyzje zapadają w Parlamencie, ale jego głos jest ważny w wielu obszarach."
-      ]
-    ],
-    "summary": "Parlament Europejski współtworzy prawo z Radą UE, współdecyduje o budżecie i kontroluje instytucje unijne. Nie jest tym samym co Komisja Europejska ani Rada Europejska.",
-    "sources": [
-      [
-        "Parlament Europejski – kompetencje",
-        "https://www.europarl.europa.eu/about-parliament/en/parliaments-powers"
-      ],
-      [
-        "Parlament Europejski – jak uchwala się prawo",
-        "https://www.europarl.europa.eu/about-parliament/en/parliaments-powers/legislative-powers"
-      ]
-    ],
-    "photo": "Oficjalna fotografia sali plenarnej Parlamentu Europejskiego, najlepiej z galerii multimedialnej PE i zgodnie z warunkami wykorzystania."
+    "description": "Kartki na żywność, wielkie osiedla i „Solidarność” — wszystkie te obrazy kojarzą się z PRL. Ale czym naprawdę był ten okres?",
+    "image": "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=900&auto=format&fit=crop",
+    "featured": false
   },
   {
     "slug": "dlaczego-pieniadze-traca-wartosc",
     "title": "Dlaczego pieniądze tracą wartość?",
     "category": "Gospodarka",
-    "lead": "Za tę samą kwotę kupujesz mniej niż kilka lat temu? To jeden z najbardziej odczuwalnych skutków inflacji.",
-    "sections": [
-      [
-        "Czym jest inflacja?",
-        "Inflacja oznacza wzrost ogólnego poziomu cen dóbr i usług w czasie. Jeśli koszyk codziennych zakupów kosztował 100 zł, a po roku 105 zł, jego cena wzrosła o 5%. Nie znaczy to, że każda rzecz podrożała dokładnie o 5% — część mogła potanieć, inne produkty zdrożeć znacznie bardziej."
-      ],
-      [
-        "Dlaczego ceny rosną?",
-        "Przyczyn może być kilka. Popyt na produkty może rosnąć szybciej niż możliwości produkcji. Mogą też wzrosnąć koszty energii, transportu lub surowców. Znaczenie mają kursy walut, oczekiwania dotyczące przyszłych cen i polityka pieniężna. W praktyce te czynniki często działają jednocześnie."
-      ],
-      [
-        "Co to jest siła nabywcza?",
-        "Siła nabywcza to ilość rzeczy, które można kupić za daną sumę. Jeśli ceny rosną, a twoje dochody stoją w miejscu, siła nabywcza spada. Przykład: przy wzroście cen o 10% kwota 100 zł kupuje mniej więcej tyle, ile wcześniej około 90,91 zł. To nie oznacza, że bank zabrał pieniądze — zmieniły się ceny."
-      ],
-      [
-        "Czy spadek inflacji oznacza tańsze zakupy?",
-        "Zazwyczaj nie. Spadek inflacji z 10% do 3% oznacza, że ceny nadal średnio rosną, ale wolniej. Ogólny spadek poziomu cen nazywa się deflacją. To rozróżnienie pomaga zrozumieć, dlaczego informacje o „malejącej inflacji” nie zawsze widać na paragonie."
-      ],
-      [
-        "Czy da się ją ograniczać?",
-        "Banki centralne wpływają na inflację m.in. przez stopy procentowe. Wyższe stopy zwykle ograniczają popyt i presję cenową, ale mogą podnosić koszt kredytów. Skutki takich działań pojawiają się z opóźnieniem."
-      ]
-    ],
-    "summary": "Inflacja to tempo wzrostu ogólnego poziomu cen. Gdy inflacja maleje, ceny zwykle nie wracają automatycznie do poprzedniego poziomu.",
-    "sources": [
-      [
-        "Europejski Bank Centralny – wyjaśnienie inflacji",
-        "https://www.ecb.europa.eu/ecb-and-you/explainers/tell-me-more/html/what_is_inflation.en.html"
-      ],
-      [
-        "NBP – portal edukacyjny",
-        "https://nbp.pl/edukacja/"
-      ]
-    ],
-    "photo": "Fotografia koszyka zakupów i paragonu lub produktów spożywczych na sklepowej półce; unikać sensacyjnych grafik z banknotami w ogniu."
+    "description": "Za tę samą kwotę kupujesz mniej niż kilka lat temu? To jeden z najbardziej odczuwalnych skutków inflacji.",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&auto=format&fit=crop",
+    "featured": false
   },
   {
-    "slug": "amnezja-dziecieca",
-    "title": "Dlaczego nie pamiętamy pierwszych lat życia?",
-    "category": "Nauka",
-    "lead": "Możesz pamiętać pierwszy dzień szkoły, ale raczej nie własne pierwsze urodziny. Dlaczego mózg zostawia taką lukę?",
-    "sections": [
-      [
-        "Czy małe dzieci w ogóle mają pamięć?",
-        "Tak. Niemowlęta uczą się rozpoznawać twarze, głosy i powtarzające się sytuacje. Potrafią też zapamiętywać pewne doświadczenia. Brak późniejszych wspomnień nie oznacza więc, że w pierwszych latach życia nie tworzyły się żadne ślady pamięciowe."
-      ],
-      [
-        "Czym jest amnezja dziecięca?",
-        "Tak nazywa się trudność dorosłych z przywoływaniem osobistych wydarzeń z bardzo wczesnego dzieciństwa. Większość ludzi ma niewiele wiarygodnych wspomnień sprzed około 3.–4. roku życia, choć granica jest różna. Pamięć autobiograficzna — opowieść o własnym życiu — rozwija się stopniowo."
-      ],
-      [
-        "Co ma z tym wspólnego mózg?",
-        "W pierwszych latach życia intensywnie rozwijają się struktury mózgu uczestniczące w tworzeniu i odtwarzaniu wspomnień, w tym hipokamp. Znaczenie mają również rozwój języka, poczucia własnego „ja” oraz umiejętności porządkowania wydarzeń w czasie. Naukowcy badają też, czy niektóre wczesne ślady pamięciowe pozostają zapisane, ale później trudno do nich dotrzeć."
-      ],
-      [
-        "A wspomnienia ze zdjęć?",
-        "Rodzinne opowieści i fotografie pomagają budować historię dzieciństwa, ale mogą też mieszać wspomnienie wydarzenia z późniejszą wiedzą o nim. Jeśli „pamiętasz” scenę, którą widziałaś dziesiątki razy na zdjęciu, trudno czasem ustalić, skąd pochodzi ten obraz."
-      ],
-      [
-        "Czy to powód do niepokoju?",
-        "Nie. Brak wspomnień z okresu niemowlęcego jest typowym zjawiskiem. Co innego nagłe lub postępujące problemy z pamięcią w dorosłości — te wymagają osobnej oceny."
-      ]
-    ],
-    "summary": "Dzieci mają pamięć, ale zdolność do trwałego opowiadania własnej przeszłości dojrzewa przez pierwsze lata życia. Mechanizmy amnezji dziecięcej nadal są badane.",
-    "sources": [
-      [
-        "Encyclopaedia Britannica – infantile amnesia",
-        "https://www.britannica.com/science/childhood-amnesia"
-      ],
-      [
-        "PubMed – badania nad amnezją dziecięcą",
-        "https://pubmed.ncbi.nlm.nih.gov/?term=infantile+amnesia+review"
-      ]
-    ],
-    "photo": "Naturalna fotografia dziecięcego albumu ze zdjęciami na stole; bez zdjęć rozpoznawalnych dzieci bez zgody."
+    "slug": "dlaczego-upadl-mur-berlinski",
+    "title": "Dlaczego upadł Mur Berliński?",
+    "category": "Historia",
+    "description": "Mur, który przez 28 lat dzielił rodziny i ulice, stracił swoją moc w jedną listopadową noc. Nie stało się to jednak przez jedno przejęzyczenie.",
+    "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&auto=format&fit=crop",
+    "featured": true
   },
   {
-    "slug": "strefy-czasowe",
-    "title": "Dlaczego istnieją strefy czasowe?",
-    "category": "Geografia",
-    "lead": "Gdy w Warszawie jest południe, w Nowym Jorku dopiero zaczyna się dzień. To nie kaprys zegarków, tylko konsekwencja ruchu Ziemi i ludzkich umów.",
-    "sections": [
-      [
-        "Dlaczego wszędzie nie jest ta sama godzina?",
-        "Ziemia obraca się wokół własnej osi mniej więcej raz na dobę. Gdy jedna część planety jest zwrócona ku Słońcu, druga pozostaje w ciemności. Dlatego lokalne południe słoneczne wypada o różnych momentach w różnych miejscach."
-      ],
-      [
-        "Skąd pomysł na strefy?",
-        "Dawniej miasta ustalały czas według lokalnego położenia Słońca. Dopóki podróżowano powoli, nie było to dużym problemem. Rozwój kolei i telegrafu sprawił jednak, że rozkłady jazdy i komunikacja wymagały wspólnego standardu. W XIX wieku upowszechniały się ujednolicone systemy czasu."
-      ],
-      [
-        "Dlaczego mówi się o 24 strefach?",
-        "Pełny obrót Ziemi to 360 stopni, a doba ma 24 godziny. W idealnym modelu na każdą godzinę przypada więc 15 stopni długości geograficznej. W rzeczywistości granice stref są nieregularne, bo państwa ustalają czas urzędowy ze względów praktycznych i politycznych. Istnieją nawet przesunięcia o pół godziny lub 45 minut."
-      ],
-      [
-        "Czym jest UTC?",
-        "UTC to współczesny międzynarodowy punkt odniesienia dla czasu. Polska stosuje zimą UTC+1, a latem UTC+2, gdy obowiązuje czas letni. To właśnie dlatego różnica godzin między krajami może się zmieniać w ciągu roku, jeśli przechodzą na czas letni w różnych terminach."
-      ],
-      [
-        "A linia zmiany daty?",
-        "W pobliżu 180. południka przebiega umowna międzynarodowa linia zmiany daty. Po jej przekroczeniu zmienia się dzień kalendarzowy. Linia omija niektóre wyspy i granice państw."
-      ]
-    ],
-    "summary": "Strefy czasowe łączą astronomię z umową społeczną: Słońce wyznacza rytm doby, a państwa ustalają praktyczny czas na zegarkach.",
-    "sources": [
-      [
-        "Royal Museums Greenwich – czas i południk",
-        "https://www.rmg.co.uk/stories/topics/greenwich-mean-time-gmt"
-      ],
-      [
-        "BIPM – standard czasu UTC",
-        "https://www.bipm.org/en/time-metrology"
-      ]
-    ],
-    "photo": "Fotografia zegara w Greenwich lub czytelna mapa stref czasowych na licencji umożliwiającej publikację."
+    "slug": "lewica-a-prawica",
+    "title": "Czym różni się lewica od prawicy?",
+    "category": "Polityka",
+    "description": "Dwa słowa, które słyszymy codziennie w wiadomościach. Czy naprawdę da się nimi opisać wszystkie poglądy?",
+    "image": "https://images.unsplash.com/photo-1520869562399-e772f042f422?w=900&auto=format&fit=crop",
+    "featured": false
   },
   {
     "slug": "mona-lisa",
     "title": "Dlaczego Mona Lisa jest tak sławna?",
     "category": "Kultura",
-    "lead": "Niewielki portret za szybą przyciąga tłumy w Luwrze. Jego sława to połączenie kunsztu, tajemnicy i jednej spektakularnej kradzieży.",
-    "sections": [
-      [
-        "Co właściwie oglądamy?",
-        "„Mona Lisa” to obraz Leonarda da Vinci, namalowany na początku XVI wieku. Najczęściej identyfikuje się modelkę jako Lisę Gherardini, żonę florenckiego kupca. Obraz znajduje się w paryskim Luwrze. Nie jest wielki — mierzy około 77 na 53 centymetry."
-      ],
-      [
-        "Co jest niezwykłego w malarstwie Leonarda?",
-        "Leonardo mistrzowsko stosował sfumato, czyli miękkie przejścia między światłem a cieniem bez wyraźnych konturów. Dzięki temu twarz wydaje się żywa, a wyraz ust trudny do jednoznacznego odczytania. Uwagę przyciąga również sposób przedstawienia postaci na tle fantazyjnego krajobrazu."
-      ],
-      [
-        "Jak kradzież zrobiła z obrazu gwiazdę?",
-        "W 1911 roku obraz skradziono z Luwru. Sprawcą był Vincenzo Peruggia, który wcześniej pracował w muzeum. Poszukiwania i doniesienia prasowe zamieniły zniknięcie dzieła w międzynarodową sensację. Odnaleziono je we Włoszech w 1913 roku. Obraz był znany wcześniej, lecz kradzież ogromnie zwiększyła jego rozpoznawalność."
-      ],
-      [
-        "Dlaczego ludzie wciąż chcą go zobaczyć?",
-        "Sławę podtrzymują reprodukcje, podręczniki, filmy, reklamy i internetowe memy. Im bardziej rozpoznawalne dzieło, tym więcej osób chce zobaczyć oryginał. W efekcie jego popularność sama napędza kolejną popularność."
-      ],
-      [
-        "Czy jest „najlepszym obrazem świata”?",
-        "To kwestia oceny, a nie fakt, który da się zmierzyć. Można docenić technikę Leonarda i jednocześnie uważać inne obrazy za bardziej poruszające. Sława i artystyczna wartość nie są tym samym."
-      ]
-    ],
-    "summary": "„Mona Lisa” stała się ikoną dzięki kunsztowi Leonarda, medialnej historii kradzieży oraz setkom lat reprodukcji i kulturowych odniesień.",
-    "sources": [
-      [
-        "Luwr – Mona Lisa",
-        "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
-      ],
-      [
-        "Biblioteka Kongresu – kradzież w 1911 roku",
-        "https://guides.loc.gov/chronicling-america-theft-mona-lisa"
-      ]
-    ],
-    "photo": "Reprodukcja samego obrazu z oficjalnego zasobu Luwru lub Wikimedia Commons; sprawdzić warunki korzystania z konkretnego pliku."
-  },
-  {
-    "slug": "propaganda",
-    "title": "Czym jest propaganda i jak ją rozpoznać?",
-    "category": "Społeczeństwo",
-    "lead": "Nie każda propaganda jest kłamstwem. Czasem wystarczy prawdziwy fakt pokazany tak, by wywołać konkretną reakcję.",
-    "sections": [
-      [
-        "Czym jest propaganda?",
-        "Propaganda to celowe rozpowszechnianie komunikatów mających kształtować poglądy, emocje lub zachowania odbiorców. Może służyć państwu, partii, organizacji czy ruchowi społecznemu. Nie musi zawierać fałszu: często wybiera tylko wygodne fakty, pomija kontekst albo używa bardzo silnych emocji."
-      ],
-      [
-        "Jakie techniki pojawiają się najczęściej?",
-        "Jedną z nich jest tworzenie prostego podziału na „nas” i „ich”. Inną — powtarzanie hasła tak często, by zaczęło brzmieć jak oczywistość. Spotyka się też straszenie katastrofą, odwoływanie do autorytetu bez dowodów, przedstawianie jednostkowego przypadku jako reguły oraz manipulowanie zdjęciem przez zmianę podpisu lub kontekstu."
-      ],
-      [
-        "Czy propaganda to to samo co dezinformacja?",
-        "Nie. Dezinformacja polega na celowym rozpowszechnianiu informacji fałszywych lub wprowadzających w błąd. Propaganda jest pojęciem szerszym: może korzystać zarówno z prawdziwych, jak i fałszywych treści. Nie każda reklama, opinia czy przekonujący tekst jest automatycznie propagandą."
-      ],
-      [
-        "Jak sprawdzać podejrzane komunikaty?",
-        "Zatrzymaj się przed udostępnieniem. Sprawdź autora, datę, pierwotne źródło i to, czy nagłówek odpowiada treści. Poszukaj niezależnych potwierdzeń. Zwróć uwagę, czy materiał podaje dane i kontekst, czy tylko wzbudza gniew lub strach. Przy zdjęciach warto sprawdzić, czy nie pochodzą ze starszego wydarzenia."
-      ],
-      [
-        "Czy każdy może ulec manipulacji?",
-        "Tak. Podatność na perswazję nie jest oznaką braku inteligencji. Łatwiej zauważamy manipulację w przekazach, z którymi się nie zgadzamy. Dlatego warto stosować te same zasady weryfikacji wobec treści zgodnych z własnymi przekonaniami."
-      ]
-    ],
-    "summary": "Najlepszą obroną przed propagandą jest sprawdzanie źródeł, kontekstu i technik perswazji — również wtedy, gdy przekaz potwierdza nasze poglądy.",
-    "sources": [
-      [
-        "UNESCO – media and information literacy",
-        "https://www.unesco.org/en/media-information-literacy"
-      ],
-      [
-        "Komisja Europejska – walka z dezinformacją",
-        "https://commission.europa.eu/topics/countering-information-manipulation_en"
-      ]
-    ],
-    "photo": "Fotografia osoby czytającej kilka źródeł informacji lub archiwalnych plakatów propagandowych z legalnego archiwum; unikać reprodukcji bez praw."
+    "description": "Niewielki portret za szybą przyciąga tłumy w Luwrze. Jego sława to połączenie kunsztu, tajemnicy i jednej spektakularnej kradzieży.",
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=900&auto=format&fit=crop",
+    "featured": false
   },
   {
     "slug": "niepodleglosc-polski",
     "title": "Jak Polska odzyskała niepodległość?",
     "category": "Historia",
-    "lead": "11 listopada 1918 roku to ważna data, ale odrodzenie Polski nie wydarzyło się w ciągu jednego dnia. Był to finał długiej pracy wielu ludzi.",
-    "sections": [
-      [
-        "Dlaczego Polski nie było na mapie?",
-        "Pod koniec XVIII wieku Rosja, Prusy i Austria dokonały rozbiorów Rzeczypospolitej. Po trzecim rozbiorze w 1795 roku polskie państwo zniknęło z mapy Europy. Przez kolejne pokolenia Polacy podejmowali próby odzyskania niezależności: od powstań po działalność polityczną, edukacyjną i gospodarczą."
-      ],
-      [
-        "Co zmieniła I wojna światowa?",
-        "W 1914 roku mocarstwa zaborcze znalazły się po przeciwnych stronach konfliktu. Wojna osłabiła wszystkie trzy, a pod jej koniec imperia rosyjskie, niemieckie i austro-węgierskie przeżywały kryzys lub upadek. Powstała wyjątkowa szansa na odbudowę państwa."
-      ],
-      [
-        "Kim byli Piłsudski i Dmowski?",
-        "Józef Piłsudski stawiał m.in. na działania wojskowe i tworzenie polskich formacji zbrojnych. Roman Dmowski prowadził działalność dyplomatyczną, zabiegając o poparcie zachodnich mocarstw dla polskiej sprawy. Ich wizje polityczne różniły się, lecz obaj odegrali istotną rolę. Ważne były też działania Ignacego Jana Paderewskiego, Ignacego Daszyńskiego, Wincentego Witosa i wielu innych osób."
-      ],
-      [
-        "Dlaczego właśnie 11 listopada?",
-        "Tego dnia w 1918 roku Józef Piłsudski przejął władzę wojskową od Rady Regencyjnej, a na froncie zachodnim wszedł w życie rozejm kończący walki I wojny światowej. Data stała się symbolem odzyskania niepodległości. Proces budowania administracji, granic i instytucji trwał jednak kolejne lata."
-      ],
-      [
-        "Czy granice były już ustalone?",
-        "Nie. O kształt państwa toczyły się spory dyplomatyczne i konflikty zbrojne, w tym wojna polsko-bolszewicka oraz powstania śląskie i wielkopolskie. Dopiero z czasem ustalił się obszar II Rzeczypospolitej."
-      ]
-    ],
-    "summary": "11 listopada symbolizuje odrodzenie Polski po 123 latach zaborów. Niepodległość była efektem wojny światowej, dyplomacji, działań wojskowych i pracy wielu środowisk.",
-    "sources": [
-      [
-        "Muzeum Historii Polski – portal",
-        "https://muzhp.pl/"
-      ],
-      [
-        "Niepodległa – materiały historyczne",
-        "https://niepodlegla.gov.pl/"
-      ],
-      [
-        "Encyklopedia PWN – odzyskanie niepodległości",
-        "https://encyklopedia.pwn.pl/"
-      ]
-    ],
-    "photo": "Archiwalne zdjęcie Józefa Piłsudskiego w 1918 r. lub fotografia tłumu w Warszawie z listopada 1918; sprawdzić pochodzenie i prawa."
+    "description": "11 listopada 1918 roku to ważna data, ale odrodzenie Polski nie wydarzyło się w ciągu jednego dnia. Był to finał długiej pracy wielu ludzi.",
+    "image": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=900&auto=format&fit=crop",
+    "featured": false
+  },
+  {
+    "slug": "parlament-europejski",
+    "title": "Co naprawdę robi Parlament Europejski?",
+    "category": "Polityka",
+    "description": "Europosłowie nie tylko przemawiają i głosują. Współdecydują o prawie, które wpływa na codzienne życie mieszkańców Unii.",
+    "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&auto=format&fit=crop",
+    "featured": false
+  },
+  {
+    "slug": "propaganda",
+    "title": "Czym jest propaganda i jak ją rozpoznać?",
+    "category": "Społeczeństwo",
+    "description": "Nie każda propaganda jest kłamstwem. Czasem wystarczy prawdziwy fakt pokazany tak, by wywołać konkretną reakcję.",
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&auto=format&fit=crop",
+    "featured": false
+  },
+  {
+    "slug": "strefy-czasowe",
+    "title": "Dlaczego istnieją strefy czasowe?",
+    "category": "Geografia",
+    "description": "Gdy w Warszawie jest południe, w Nowym Jorku dopiero zaczyna się dzień. To nie kaprys zegarków, tylko konsekwencja ruchu Ziemi i ludzkich umów.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&auto=format&fit=crop",
+    "featured": false
   }
 ]

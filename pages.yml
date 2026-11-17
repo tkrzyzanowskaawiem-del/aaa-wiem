@@ -1,0 +1,44 @@
+media:
+  input: images
+  output: /images
+content:
+  - name: artykuly
+    label: Artykuły
+    type: collection
+    path: content/artykuly
+    view:
+      fields: [title, category, featured]
+      primary: title
+      sort: [title]
+      default:
+        sort: title
+        order: asc
+    fields:
+      - name: title
+        label: Tytuł
+        type: string
+        required: true
+      - name: slug
+        label: Adres artykułu (bez spacji i polskich znaków)
+        type: string
+        required: true
+      - name: category
+        label: Kategoria
+        type: select
+        required: true
+        options:
+          values: [Historia, Polityka, Gospodarka, Nauka, Geografia, Kultura, Społeczeństwo]
+      - name: description
+        label: Krótki opis na stronie głównej
+        type: text
+        required: true
+      - name: image
+        label: Zdjęcie (adres HTTPS lub plik z images)
+        type: image
+      - name: featured
+        label: Wyróżnij na stronie głównej
+        type: boolean
+        default: false
+      - name: body
+        label: Treść artykułu
+        type: rich-text
