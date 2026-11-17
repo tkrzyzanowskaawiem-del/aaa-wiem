@@ -1,12 +1,11 @@
 ---
-title: "Dlaczego nie pamiętamy pierwszych lat życia?"
-slug: "amnezja-dziecieca"
-category: "Nauka"
-description: "Możesz pamiętać pierwszy dzień szkoły, ale raczej nie własne pierwsze urodziny. Dlaczego mózg zostawia taką lukę?"
-image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&auto=format&fit=crop"
+title: Dlaczego nie pamiętamy pierwszych lat życia?
+slug: amnezja-dziecieca
+category: Nauka
+description: Możesz pamiętać pierwszy dzień szkoły, ale raczej nie własne
+  pierwsze urodziny. Dlaczego mózg zostawia taką lukę?
 featured: false
 ---
-
 ## Czy małe dzieci w ogóle mają pamięć?
 
 Tak. Niemowlęta uczą się rozpoznawać twarze, głosy i powtarzające się sytuacje. Potrafią też zapamiętywać pewne doświadczenia. Brak późniejszych wspomnień nie oznacza więc, że w pierwszych latach życia nie tworzyły się żadne ślady pamięciowe.
@@ -33,5 +32,8 @@ Dzieci mają pamięć, ale zdolność do trwałego opowiadania własnej przeszł
 
 ## Źródła i dalsza lektura
 
-* [Encyclopaedia Britannica – infantile amnesia](https://www.britannica.com/science/childhood-amnesia)
-* [PubMed – badania nad amnezją dziecięcą](https://pubmed.ncbi.nlm.nih.gov/?term=infantile+amnesia+review)
+- [Encyclopaedia Britannica – infantile amnesia](https://www.britannica.com/science/childhood-amnesia)
+- [PubMed – badania nad amnezją dziecięcą](https://pubmed.ncbi.nlm.nih.gov/?term=infantile+amnesia+review)
+
+`TEST PUBLIKACJI AAA WIEM`
+
