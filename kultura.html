@@ -1,1 +1,180 @@
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sztuka i kultura — AAA, WIEM!</title>
+<meta name="description" content="Najważniejsze obrazy, filmy, książki i artyści. Kultura wyjaśniona po ludzku.">
+<link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+.culture-hero{padding:76px 0 45px}
+.culture-hero h1{font-size:clamp(38px,6vw,68px);line-height:1.08;letter-spacing:-.045em;margin:18px 0}
+.culture-hero h1 em{font-style:italic}
+.culture-hero p{max-width:690px;font-size:18px;line-height:1.8}
+.culture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:25px 0 75px}
+.culture-card{display:flex;flex-direction:column;min-height:270px;padding:34px;border:1px solid #d8d6cc;border-radius:20px;background:#f7f5ee;color:#243b32;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.culture-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #00000012}
+.culture-card .symbol{font-size:36px;margin-bottom:24px}
+.culture-card h2{font-size:30px;line-height:1.2;margin:0 0 12px}
+.culture-card p{line-height:1.7;margin:0 0 20px}
+.culture-card .arrow{margin-top:auto;font-weight:700}
+.culture-card.dark{background:#234d40;color:#fff}
+.culture-card.cream{background:#ede7d8}
+.culture-card.blue{background:#e3eaf0}
+.culture-card.sage{background:#e4e9df}
+.section-head{margin:50px 0 24px}
+.section-head h2{font-size:clamp(29px,4vw,43px);margin:10px 0}
+.section-head p{max-width:680px;line-height:1.8}
+.film-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:65px}
+.film-card{padding:24px;border:1px solid #d8d6cc;border-radius:16px;background:#faf9f5}
+.film-card .year{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.65}
+.film-card h3{font-size:23px;margin:12px 0 7px}
+.film-card .director{font-size:14px;opacity:.7;margin:0 0 16px}
+.film-card p{line-height:1.7;font-size:15px}
+.film-card strong{display:block;margin-top:15px;font-size:14px}
+.culture-note{padding:25px 30px;border:1px solid #d8d6cc;border-radius:16px;margin-bottom:70px;line-height:1.8}
+.culture-link{display:inline-block;padding:14px 22px;border-radius:12px;background:#234d40;color:#fff;text-decoration:none;font-weight:600}
+.culture-link:hover{opacity:.9}
+@media(max-width:800px){.film-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.culture-grid,.film-grid{grid-template-columns:1fr}.culture-hero{padding-top:45px}.culture-card{min-height:220px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="logo" href="index.html" style="text-decoration:none">aaa, wiem<span>!</span></a>
+<nav>
+<button onclick="location.href='index.html'">Start</button>
+<button onclick="location.href='index.html#odkrywaj'">Odkrywaj</button>
+<button onclick="location.href='kultura.html'">Sztuka i kultura</button>
+<button onclick="location.href='index.html#quizy'">Quizy</button>
+</nav>
+</div>
+</header>
+
+<main class="wrap">
+
+<section class="culture-hero">
+<span class="tag">AAA, WIEM! / SZTUKA I KULTURA</span>
+<h1>Klasyka, którą <em>warto znać.</em></h1>
+<p class="muted">Nie musisz być znawcą sztuki, żeby rozumieć kulturę. Poznaj najważniejsze obrazy, filmy, książki i nazwiska, które zmieniły sposób, w jaki patrzymy na świat.</p>
+</section>
+
+<section class="culture-grid" aria-label="Działy kultury">
+<a class="culture-card dark" href="#malarstwo">
+<div class="symbol">🎨</div>
+<h2>Malarstwo</h2>
+<p>Obrazy, które zmieniły historię sztuki. Poznaj ich twórców, znaczenie i ukryte historie.</p>
+<span class="arrow">Odkryj malarstwo →</span>
+</a>
+
+<a class="culture-card cream" href="#kino">
+<div class="symbol">🎬</div>
+<h2>Kino</h2>
+<p>Filmy wszech czasów, które warto kojarzyć — nawet jeśli jeszcze ich nie oglądałaś.</p>
+<span class="arrow">Poznaj klasykę kina →</span>
+</a>
+
+<div class="culture-card blue">
+<div class="symbol">📚</div>
+<h2>Literatura</h2>
+<p>Wielkie książki i pisarze, którzy zmienili literaturę oraz sposób myślenia.</p>
+<span class="arrow">Dział w przygotowaniu</span>
+</div>
+
+<div class="culture-card sage">
+<div class="symbol">🎸</div>
+<h2>Legendarne zespoły i artyści</h2>
+<p>Najważniejsze postacie w historii muzyki. Bez katalogowania pojedynczych piosenek.</p>
+<span class="arrow">Dział w przygotowaniu</span>
+</div>
+</section>
+
+<section id="malarstwo">
+<div class="section-head">
+<span class="tag">01 / MALARSTWO</span>
+<h2>Obrazy, które warto rozpoznawać.</h2>
+<p class="muted">Od renesansu po współczesność. Dlaczego Mona Lisa jest tak słynna? Co wyraża Krzyk Muncha? Co kryje się w obrazach polskich mistrzów?</p>
+</div>
+<div class="culture-note">
+<strong>Wirtualna galeria malarstwa</strong>
+<p>Przygotowujemy kolekcję najważniejszych obrazów z opisami ich historii, autorów i znaczenia. Galeria będzie dostępna po przywróceniu jej pliku na stronie.</p>
+</div>
+</section>
+
+<section id="kino">
+<div class="section-head">
+<span class="tag">02 / KINO</span>
+<h2>Filmy wszech czasów.</h2>
+<p class="muted">Nie chodzi o to, żeby obejrzeć wszystko. Chodzi o to, żeby wiedzieć, jakie filmy ukształtowały kino i dlaczego do dziś się o nich mówi.</p>
+</div>
+
+<div class="film-grid" id="filmGrid"></div>
+</section>
+
+<section class="culture-note">
+<strong>To dopiero początek.</strong>
+<p>AAA, WIEM! będzie stopniowo rozwijać kolekcję. Każdy film i obraz docelowo otrzyma własną kartę z ciekawostkami, historią powstania i wyjaśnieniem jego znaczenia.</p>
+</section>
+
+</main>
+
+<footer class="sitefoot">
+<div class="wrap"><strong>aaa, wiem!</strong> · Świat wyjaśniony po ludzku.</div>
+</footer>
+
+<script>
+const films = [
+["Ojciec chrzestny",1972,"Francis Ford Coppola","Saga rodziny Corleone i opowieść o władzy, lojalności oraz cenie rodzinnych zobowiązań.","Jeden z najważniejszych filmów gangsterskich w historii."],
+["Obywatel Kane",1941,"Orson Welles","Historia potężnego magnata prasowego opowiedziana przez wspomnienia ludzi z jego otoczenia.","Przełomowe wykorzystanie narracji, zdjęć i głębi ostrości."],
+["Casablanca",1942,"Michael Curtiz","Miłość i trudne wybory w czasie II wojny światowej.","Klasyka hollywoodzkiego kina i jeden z najbardziej znanych romansów filmowych."],
+["Siedmiu samurajów",1954,"Akira Kurosawa","Siedmiu wojowników podejmuje się obrony wioski przed bandytami.","Film, który wywarł ogromny wpływ na kino akcji i opowieści o drużynie bohaterów."],
+["2001: Odyseja kosmiczna",1968,"Stanley Kubrick","Filozoficzna podróż przez dzieje człowieka, technologię i kosmos.","Przełomowe efekty specjalne oraz nowe podejście do science fiction."],
+["Lista Schindlera",1993,"Steven Spielberg","Historia przemysłowca, który podczas Holokaustu ratował Żydów.","Jeden z najważniejszych filmów podejmujących temat Zagłady."],
+["Pulp Fiction",1994,"Quentin Tarantino","Przeplatające się historie przestępców i przypadkowych spotkań w Los Angeles.","Słynie z nielinearnej narracji, dialogów i wpływu na kino lat 90."],
+["Matrix",1999,"Lana i Lilly Wachowskie","Haker odkrywa, że rzeczywistość może nie być tym, czym się wydaje.","Film, który połączył filozoficzne pytania z nowatorskim kinem akcji."],
+["Titanic",1997,"James Cameron","Historia miłości na pokładzie statku podczas jego tragicznego rejsu.","Jedno z największych wydarzeń w historii kina popularnego."],
+["Pianista",2002,"Roman Polański","Losy Władysława Szpilmana próbującego przetrwać w okupowanej Warszawie.","Ważny film o doświadczeniu wojny i Holokaustu."],
+["Popiół i diament",1958,"Andrzej Wajda","Dramat młodego żołnierza podziemia u schyłku II wojny światowej.","Jedno z najważniejszych dzieł polskiej szkoły filmowej."],
+["Ziemia obiecana",1975,"Andrzej Wajda","Opowieść o przemysłowej Łodzi, ambicji i bezwzględnym kapitalizmie.","Wybitna polska adaptacja powieści Władysława Reymonta."],
+["Parasite",2019,"Bong Joon-ho","Dwie rodziny z różnych klas społecznych zostają uwikłane w nieoczekiwaną historię.","Pierwszy film nieanglojęzyczny nagrodzony Oscarem za najlepszy film."],
+["Lot nad kukułczym gniazdem",1975,"Miloš Forman","Konflikt między buntowniczym pacjentem a autorytarnym systemem szpitala psychiatrycznego.","Klasyczny dramat o wolności jednostki i władzy."],
+["Forrest Gump",1994,"Robert Zemeckis","Życie niezwykłego bohatera na tle ważnych wydarzeń historii USA.","Jeden z najbardziej rozpoznawalnych filmów amerykańskiej popkultury."]
+];
+
+const grid = document.getElementById("filmGrid");
+
+films.forEach(([title,year,director,story,why]) => {
+const card = document.createElement("article");
+card.className = "film-card";
+
+const y = document.createElement("span");
+y.className = "year";
+y.textContent = "Film · " + year;
+
+const h = document.createElement("h3");
+h.textContent = title;
+
+const d = document.createElement("p");
+d.className = "director";
+d.textContent = "Reżyseria: " + director;
+
+const p = document.createElement("p");
+p.textContent = story;
+
+const strong = document.createElement("strong");
+strong.textContent = "Dlaczego warto znać?";
+
+const reason = document.createElement("p");
+reason.textContent = why;
+
+card.append(y,h,d,p,strong,reason);
+grid.appendChild(card);
+});
+</script>
+</body>
+</html>
+
