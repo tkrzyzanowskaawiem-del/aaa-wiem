@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Artykuł — AAA, WIEM!</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.article-wrap{max-width:790px;margin:65px auto 100px;padding:0 22px}
+.article-wrap h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,60px);line-height:1.12;margin:20px 0}
+.article-wrap h2{font-family:Georgia,serif;font-size:29px;margin:45px 0 18px}
+.article-wrap p{font-size:18px;line-height:1.9;margin:0 0 24px}
+.article-wrap .lead{font-size:21px;color:#756763}
+.article-wrap img{display:block;width:100%;max-height:480px;object-fit:cover;border-radius:18px;margin:35px 0}
+.article-wrap .back{display:inline-block;margin-bottom:30px;text-decoration:none;color:inherit}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="index.html" style="text-decoration:none">aaa, wiem<span>!</span></a>
+  <nav><a href="index.html">Wróć do biblioteki</a></nav>
+ </div>
+</header>
+<main class="article-wrap" id="article">
+ <p>Wczytywanie artykułu...</p>
+</main>
+<footer class="sitefoot">
+ <div class="wrap"><strong>aaa, wiem!</strong> · Świat wyjaśniony po ludzku.</div>
+</footer>
+<script>
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({
+ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','&apos;':'&#39;',"'":'&#39;'
+}[c]));
+const params=new URLSearchParams(location.search);
+const slug=params.get('slug');
+const root=document.getElementById('article');
+function formatBody(text){
+ const blocks=String(text||'').trim().split(/\n\s*\n/);
+ return blocks.map(block=>{
+  const value=block.trim();
+  if(!value)return '';
+  if(value.startsWith('## ')){
+   return '<h2>'+esc(value.slice(3))+'</h2>';
+  }
+  return '<p>'+esc(value).replace(/\n/g,'<br>')+'</p>';
+ }).join('');
+}
+if(!slug){
+ root.textContent='Nie wskazano artykułu.';
+}else{
+ fetch('artykuly.json',{cache:'no-store'})
+ .then(r=>{if(!r.ok)throw Error('Nie można wczytać biblioteki');return r.json()})
+ .then(articles=>{
+  const a=articles.find(x=>x.slug===slug&&x.published!==false&&x.dynamic===true);
+  if(!a)throw Error('Nie znaleziono artykułu.');
+  document.title=a.title+' — AAA, WIEM!';
+  const image=/^https:\/\//i.test(a.image||'')?a.image:
+   /^images\/[\w./-]+$/.test(a.image||'')?a.image:'';
+  root.innerHTML=
+   '<a class="back" href="index.html">← Wróć do biblioteki</a>'+
+   '<span class="tag">'+esc(a.category)+'</span>'+
+   '<h1>'+esc(a.title)+'</h1>'+
+   '<p class="lead">'+esc(a.description)+'</p>'+
+   (image?'<img src="'+esc(image)+'" alt="">':'')+
+   formatBody(a.body);
+ })
+ .catch(e=>{root.textContent=e.message;});
+}
+</script>
+</body>
+</html>
