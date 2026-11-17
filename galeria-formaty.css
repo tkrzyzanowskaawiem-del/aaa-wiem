@@ -1,0 +1,13 @@
+/* AAA, WIEM! — obrazy w naturalnych proporcjach */
+.gallery { display:flex !important; flex-wrap:wrap !important; align-items:center !important; justify-content:center !important; gap:54px 34px !important; padding:45px 16px 80px !important; }
+.gallery .art-card { flex:0 0 auto !important; width:auto !important; max-width:min(100%,440px) !important; min-width:0 !important; }
+.gallery .art-frame { display:block !important; width:auto !important; height:auto !important; aspect-ratio:auto !important; overflow:hidden !important; padding:0 !important; border:9px solid #eee4d5 !important; outline:2px solid #94785e !important; box-shadow:0 9px 20px #33271c33 !important; background:#e9e1d7 !important; }
+.gallery .art-frame img { display:block !important; width:auto !important; height:auto !important; max-width:100% !important; max-height:355px !important; object-fit:contain !important; aspect-ratio:auto !important; }
+.gallery .art-card:nth-child(1) .art-frame img { max-height:355px !important; }
+.gallery .art-card:nth-child(2) .art-frame img { max-height:255px !important; }
+.gallery .art-card:nth-child(3) .art-frame img { max-height:335px !important; }
+.gallery .art-card:nth-child(4) .art-frame img { max-height:320px !important; }
+.gallery .art-card:nth-child(5) .art-frame img { max-height:245px !important; }
+.gallery .art-card:nth-child(6) .art-frame img { max-height:320px !important; }
+.gallery .art-meta { max-width:100% !important; }
+@media(max-width:700px){ .gallery { gap:30px 15px !important; } .gallery .art-card { max-width:calc(50% - 10px) !important; } .gallery .art-frame { border-width:5px !important; } .gallery .art-frame img { max-width:100% !important; max-height:240px !important; } }
