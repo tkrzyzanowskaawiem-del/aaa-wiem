@@ -1,72 +1,71 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sztuka i kultura — AAA, WIEM!</title>
 <link rel="stylesheet" href="style.css">
 <style>
 :root{
---paper:#fcfaf8;
---ink:#4b3836;
---muted:#796c6a;
---blue:#dceaf4;
---rose:#f5dfe5;
---cocoa:#e8d6c8;
---wine:#e9d8df;
---line:#e8dfdc
+ --paper:#fcfaf8;
+ --ink:#493a38;
+ --muted:#796b69;
+ --blue:#dceaf4;
+ --pink:#f4dfe5;
+ --brown:#e9d8c9;
+ --burgundy:#ead9e0;
+ --line:#e9dfdc;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink)}
 .culture{max-width:1180px;margin:auto;padding:0 24px}
-.hero{padding:74px 0 50px}
-.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#986f7d}
-.hero h1{font-size:clamp(43px,7vw,78px);line-height:1.08;letter-spacing:-.05em;margin:18px 0}
-.hero h1 em{font-family:Georgia,serif;color:#a77d8a;font-weight:400}
-.hero p,.intro{max-width:700px;color:var(--muted);line-height:1.8;font-size:17px}
-.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:15px 0 76px}
-.tile{padding:25px;border-radius:18px;min-height:190px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;justify-content:space-between}
+.hero{padding:75px 0 50px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#9d7280}
+.hero h1{font-size:clamp(44px,7vw,78px);letter-spacing:-.055em;line-height:1.08;margin:20px 0}
+.hero h1 em{font-family:Georgia,serif;font-weight:400;color:#a77b88}
+.hero p,.intro{max-width:700px;line-height:1.8;color:var(--muted);font-size:17px}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:15px 0 80px}
+.tile{min-height:180px;border-radius:19px;padding:24px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;justify-content:space-between}
 .tile:nth-child(1){background:var(--blue)}
-.tile:nth-child(2){background:var(--rose)}
-.tile:nth-child(3){background:var(--cocoa)}
-.tile:nth-child(4){background:var(--wine)}
-.tile small{letter-spacing:.13em}
-.tile h2{font-size:24px;line-height:1.15;margin:15px 0 0}
-.section{margin-bottom:76px;scroll-margin-top:90px}
-.section h2{font-size:clamp(31px,4vw,47px);letter-spacing:-.04em;margin:12px 0}
-.collection{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px;margin-top:28px}
-.piece{border:1px solid var(--line);background:#fff;border-radius:17px;overflow:hidden;min-width:0}
-.visual{height:285px;background:linear-gradient(135deg,#e3edf4,#ead5dd);position:relative;display:flex;align-items:center;justify-content:center}
-.visual img{width:100%;height:100%;object-fit:cover;display:none}
-.visual img.ready{display:block}
-.visual .placeholder{padding:25px;text-align:center;font-family:Georgia,serif;font-size:27px;line-height:1.22;color:#80616a}
-.piece:nth-child(3n+2) .visual{background:linear-gradient(135deg,#edddd1,#f5e4e6)}
-.piece:nth-child(3n) .visual{background:linear-gradient(135deg,#d9e5e3,#e9d8e0)}
-.info{padding:20px}
-.info small{font-size:11px;letter-spacing:.12em;color:#9a7480;text-transform:uppercase;font-weight:700}
-.info h3{font-size:23px;line-height:1.2;margin:8px 0}
+.tile:nth-child(2){background:var(--pink)}
+.tile:nth-child(3){background:var(--brown)}
+.tile:nth-child(4){background:var(--burgundy)}
+.tile small{font-size:11px;letter-spacing:.13em}
+.tile h2{font-size:24px;line-height:1.2;margin:15px 0 0}
+.section{margin:0 0 85px;scroll-margin-top:95px}
+.section h2{font-size:clamp(32px,4vw,46px);letter-spacing:-.04em;margin:12px 0}
+.collection{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:30px}
+.card{background:#fffdfb;border:1px solid var(--line);border-radius:18px;overflow:hidden;min-width:0}
+.photo{height:315px;background:linear-gradient(135deg,var(--blue),var(--pink));position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card:nth-child(3n+2) .photo{background:linear-gradient(135deg,var(--brown),var(--pink))}
+.card:nth-child(3n) .photo{background:linear-gradient(135deg,var(--burgundy),var(--blue))}
+.photo img{width:100%;height:100%;object-fit:cover;display:none}
+.photo img.loaded{display:block}
+.fallback{font-family:Georgia,serif;font-size:28px;text-align:center;line-height:1.2;padding:25px;color:#795c65}
+.photo-label{position:absolute;bottom:12px;left:12px;right:12px;width:max-content;max-width:calc(100% - 24px);background:#fffdf0ed;border-radius:7px;padding:6px 10px;font-size:11px;color:#5b4646;display:none}
+.photo-label.visible{display:block}
+.info{padding:21px}
+.info small{font-size:11px;text-transform:uppercase;letter-spacing:.09em;font-weight:700;color:#9d7180}
+.info h3{font-size:23px;line-height:1.25;margin:9px 0}
 .info p{font-size:14px;line-height:1.7;color:var(--muted);margin:8px 0}
 .info .why{color:var(--ink)}
-.credit{font-size:11px!important}
-.credit a{color:#8d6876}
-.notice{background:var(--blue);border-radius:18px;padding:24px 30px;margin:50px 0 80px;line-height:1.7}
-.notice p{margin:8px 0 0}
+.source{display:inline-block;margin-top:12px;font-size:12px;color:#886573;text-decoration:underline}
+.note{background:var(--blue);border-radius:19px;padding:30px;margin:30px 0 80px;line-height:1.8}
+.note p{margin:8px 0 0}
 @media(max-width:850px){
-.tiles{grid-template-columns:repeat(2,1fr)}
-.collection{grid-template-columns:repeat(2,1fr)}
+.tiles,.collection{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:560px){
 .tiles,.collection{grid-template-columns:1fr}
 .hero{padding-top:45px}
-.visual{height:330px}
-.tile{min-height:140px}
+.tile{min-height:135px}
+.photo{height:350px}
 }
 </style>
 </head>
 <body>
-
 <header>
 <div class="wrap nav">
 <a class="logo" href="index.html" style="text-decoration:none">aaa, wiem<span>!</span></a>
@@ -80,204 +79,283 @@ body{background:var(--paper);color:var(--ink)}
 </header>
 
 <main class="culture">
-
 <section class="hero">
 <span class="eyebrow">AAA, WIEM! / SZTUKA I KULTURA</span>
 <h1>Klasyka, którą <em>warto znać.</em></h1>
-<p>Obrazy, filmy i artyści, których ślady spotykasz wszędzie. Poznaj ich historie bez trudnego języka i bez zadęcia.</p>
+<p>Najważniejsze obrazy, filmy, książki i artyści. Odkrywaj kulturę przez historie, ludzi i dzieła, które zmieniły świat.</p>
 </section>
 
 <section class="tiles">
-<a class="tile" href="#malarstwo">
-<small>01 / SZTUKA</small>
-<h2>Malarstwo</h2>
-</a>
-<a class="tile" href="#kino">
-<small>02 / FILM</small>
-<h2>Kino</h2>
-</a>
-<a class="tile" href="#literatura">
-<small>03 / KSIĄŻKI</small>
-<h2>Literatura</h2>
-</a>
-<a class="tile" href="#muzyka">
-<small>04 / SCENA</small>
-<h2>Legendarne zespoły i artyści</h2>
-</a>
+<a class="tile" href="#malarstwo"><small>01 / SZTUKA</small><h2>Malarstwo</h2></a>
+<a class="tile" href="#kino"><small>02 / FILM</small><h2>Kino</h2></a>
+<a class="tile" href="#literatura"><small>03 / KSIĄŻKI</small><h2>Literatura</h2></a>
+<a class="tile" href="#zespoly"><small>04 / SCENA</small><h2>Legendarne zespoły i artyści</h2></a>
 </section>
 
 <section class="section" id="malarstwo">
 <span class="eyebrow">01 / MALARSTWO</span>
 <h2>Obrazy, które przeszły do historii.</h2>
-<p class="intro">Prawdziwe reprodukcje słynnych dzieł i krótkie opowieści o tym, dlaczego wciąż są ważne.</p>
-<div class="collection" id="art"></div>
+<p class="intro">Arcydzieła, które warto rozpoznawać — od renesansu po współczesność.</p>
+<div class="collection" id="artGrid"></div>
 </section>
 
 <section class="section" id="kino">
 <span class="eyebrow">02 / KINO</span>
-<h2>Filmy, które warto kojarzyć.</h2>
-<p class="intro">Klasyka światowa i polska. Zdjęcia pochodzą z powiązanych artykułów Wikipedii, gdy są dostępne; nie zawsze są oficjalnymi plakatami.</p>
-<div class="collection" id="film"></div>
+<h2>Filmy, które warto znać.</h2>
+<p class="intro">Klasyka światowego i polskiego kina. Przy filmach zobaczysz dostępne fotografie związane z produkcją lub portrety ich reżyserów.</p>
+<div class="collection" id="filmGrid"></div>
 </section>
 
 <section class="section" id="literatura">
 <span class="eyebrow">03 / LITERATURA</span>
 <h2>Książki, które zmieniły świat.</h2>
-<p class="intro">Ten dział rozbudujemy o okładki, autorów i najważniejsze dzieła literatury.</p>
+<p class="intro">Następna kolekcja: najważniejsze książki, ich autorzy i historie powstania.</p>
 </section>
 
-<section class="section" id="muzyka">
+<section class="section" id="zespoly">
 <span class="eyebrow">04 / MUZYKA</span>
 <h2>Legendarne zespoły i artyści.</h2>
-<p class="intro">Ludzie i zespoły, którzy ukształtowali muzykę. Zdjęcia grup, krótkie historie i ich wpływ na kulturę — bez listowania utworów.</p>
-<div class="collection" id="band"></div>
+<p class="intro">Od The Beatles po Maanam. Ludzie, którzy ukształtowali muzykę i popkulturę.</p>
+<div class="collection" id="bandGrid"></div>
 </section>
 
-<aside class="notice">
-<strong>Skąd pochodzą zdjęcia?</strong>
-<p>Miniatury są pobierane z Wikipedii. Kliknięcie podpisu „Źródło zdjęcia” otwiera artykuł, z którego pochodzi fotografia lub reprodukcja. Licencję konkretnego zdjęcia trzeba sprawdzić na jego stronie pliku przed trwałym wykorzystaniem w serwisie.</p>
+<aside class="note">
+<strong>O fotografiach</strong>
+<p>Zdjęcia pobieramy z Wikipedii i Wikimedia Commons. Przy każdym zdjęciu znajduje się odnośnik do źródła. Dostępność fotografii zależy od zasobów tych serwisów, a warunki wykorzystania konkretnego pliku należy sprawdzić na jego stronie.</p>
 </aside>
-
 </main>
 
 <footer class="sitefoot">
-<div class="wrap">
-<strong>aaa, wiem!</strong> · Świat wyjaśniony po ludzku.
-</div>
+<div class="wrap"><strong>aaa, wiem!</strong> · Świat wyjaśniony po ludzku.</div>
 </footer>
 
 <script>
-const art=[
-['Mona Lisa','Leonardo da Vinci','Mona Lisa','Najbardziej rozpoznawalny portret świata.','Tajemniczy uśmiech i niezwykła technika sfumato.'],
-['Gwiaździsta noc','Vincent van Gogh','The Starry Night','Nocne niebo pełne wirujących barw.','Jedno z najbardziej osobistych dzieł postimpresjonizmu.'],
-['Krzyk','Edvard Munch','The Scream','Obraz niepokoju i samotności.','Stał się uniwersalnym symbolem ludzkiego lęku.'],
-['Dziewczyna z perłą','Johannes Vermeer','Girl with a Pearl Earring','Portret, który przyciąga spojrzeniem.','Arcydzieło światła i subtelnego koloru.'],
-['Narodziny Wenus','Sandro Botticelli','The Birth of Venus','Mitologiczna bogini wychodzi z morza.','Symbol piękna włoskiego renesansu.'],
-['Pocałunek','Gustav Klimt','The Kiss (Klimt)','Złota opowieść o bliskości.','Ikona wiedeńskiej secesji.'],
-['Stworzenie Adama','Michał Anioł','The Creation of Adam','Słynny gest dłoni na sklepieniu Kaplicy Sykstyńskiej.','Jedno z najważniejszych przedstawień renesansowych.'],
-['Wielka fala w Kanagawie','Katsushika Hokusai','The Great Wave off Kanagawa','Potężna fala nad łodziami.','Japoński drzeworyt, który wpłynął także na sztukę Europy.'],
-['Stańczyk','Jan Matejko','Stańczyk (painting)','Zamyślony błazen królewski.','Symbol politycznej refleksji w polskim malarstwie.']
+const paintings=[
+["Mona Lisa","Leonardo da Vinci","Mona Lisa","Najsłynniejszy portret świata."],
+["Gwiaździsta noc","Vincent van Gogh","The Starry Night","Niezwykłe nocne niebo pełne ruchu."],
+["Krzyk","Edvard Munch","The Scream","Uniwersalny symbol ludzkiego lęku."],
+["Dziewczyna z perłą","Johannes Vermeer","Girl with a Pearl Earring","Arcydzieło światła i koloru."],
+["Narodziny Wenus","Sandro Botticelli","The Birth of Venus","Ikona włoskiego renesansu."],
+["Pocałunek","Gustav Klimt","The Kiss (Klimt)","Symbol wiedeńskiej secesji."],
+["Stworzenie Adama","Michał Anioł","The Creation of Adam","Jedno z najsłynniejszych dzieł renesansu."],
+["Wielka fala w Kanagawie","Katsushika Hokusai","The Great Wave off Kanagawa","Japoński drzeworyt znany na całym świecie."],
+["Stańczyk","Jan Matejko","Stańczyk (painting)","Polskie malarstwo historyczne pełne symboliki."]
 ];
 
-const film=[
-['Ojciec chrzestny','Francis Ford Coppola · 1972','The Godfather','Saga rodziny Corleone.','Arcydzieło kina gangsterskiego.'],
-['Pulp Fiction','Quentin Tarantino · 1994','Pulp Fiction','Przeplatające się losy przestępców.','Zmienił język kina lat 90.'],
-['Casablanca','Michael Curtiz · 1942','Casablanca (film)','Miłość i wybory podczas wojny.','Jeden z symboli klasycznego Hollywood.'],
-['Titanic','James Cameron · 1997','Titanic (1997 film)','Romans na pokładzie słynnego statku.','Fenomen światowej popkultury.'],
-['Matrix','Lana i Lilly Wachowskie · 1999','The Matrix','Czy świat jest tym, czym się wydaje?','Przełomowy styl kina akcji.'],
-['Lista Schindlera','Steven Spielberg · 1993',"Schindler's List",'Historia ratowania Żydów podczas Zagłady.','Jedno z najważniejszych dzieł o Holokauście.'],
-['Obywatel Kane','Orson Welles · 1941','Citizen Kane','Portret wpływowego magnata prasowego.','Filmowy przełom narracyjny.'],
-['Siedmiu samurajów','Akira Kurosawa · 1954','Seven Samurai','Wojownicy bronią niewielkiej wioski.','Inspiracja dla wielu filmów akcji.'],
-['2001: Odyseja kosmiczna','Stanley Kubrick · 1968','2001: A Space Odyssey','Podróż przez kosmos i ludzkie pytania.','Wizjonerska klasyka science fiction.'],
-['Pianista','Roman Polański · 2002','The Pianist (2002 film)','Losy Władysława Szpilmana w Warszawie.','Ważne świadectwo wojny na ekranie.'],
-['Popiół i diament','Andrzej Wajda · 1958','Ashes and Diamonds (film)','Trudne wybory u końca wojny.','Fundament polskiej szkoły filmowej.'],
-['Ziemia obiecana','Andrzej Wajda · 1975','The Promised Land (1975 film)','Ambicje w przemysłowej Łodzi.','Wybitna adaptacja polskiej powieści.'],
-['Parasite','Bong Joon-ho · 2019','Parasite (2019 film)','Dwie rodziny, dwa światy.','Przełomowy sukces kina koreańskiego.'],
-['Forrest Gump','Robert Zemeckis · 1994','Forrest Gump','Życie bohatera na tle historii USA.','Ikona kina popularnego.'],
-['Lot nad kukułczym gniazdem','Miloš Forman · 1975',"One Flew Over the Cuckoo's Nest (film)",'Bunt wobec instytucjonalnej kontroli.','Klasyczny dramat o wolności.']
+const movies=[
+["Ojciec chrzestny","Francis Ford Coppola",1972,"The Godfather","Francis Ford Coppola","Saga rodziny Corleone i historia władzy."],
+["Pulp Fiction","Quentin Tarantino",1994,"Pulp Fiction","Quentin Tarantino","Kultowe dialogi i nielinearna narracja."],
+["Casablanca","Michael Curtiz",1942,"Casablanca (film)","Michael Curtiz","Klasyczny hollywoodzki romans wojenny."],
+["Titanic","James Cameron",1997,"Titanic (1997 film)","James Cameron","Wielka historia miłosna na tle katastrofy."],
+["Matrix","Lana i Lilly Wachowskie",1999,"The Matrix","The Wachowskis","Film, który zmienił kino akcji."],
+["Lista Schindlera","Steven Spielberg",1993,"Schindler's List","Steven Spielberg","Ważna opowieść o Holokauście."],
+["Obywatel Kane","Orson Welles",1941,"Citizen Kane","Orson Welles","Przełom w historii filmowej narracji."],
+["Siedmiu samurajów","Akira Kurosawa",1954,"Seven Samurai","Akira Kurosawa","Inspiracja dla pokoleń twórców."],
+["2001: Odyseja kosmiczna","Stanley Kubrick",1968,"2001: A Space Odyssey","Stanley Kubrick","Wizjonerskie science fiction."],
+["Pianista","Roman Polański",2002,"The Pianist (2002 film)","Roman Polanski","Losy Władysława Szpilmana podczas wojny."],
+["Popiół i diament","Andrzej Wajda",1958,"Ashes and Diamonds (film)","Andrzej Wajda","Klasyka polskiej szkoły filmowej."],
+["Ziemia obiecana","Andrzej Wajda",1975,"The Promised Land (1975 film)","Andrzej Wajda","Wielka opowieść o przemysłowej Łodzi."],
+["Parasite","Bong Joon-ho",2019,"Parasite (2019 film)","Bong Joon-ho","Przełomowy film o nierównościach społecznych."],
+["Forrest Gump","Robert Zemeckis",1994,"Forrest Gump","Robert Zemeckis","Kultowa historia na tle dziejów USA."],
+["Lot nad kukułczym gniazdem","Miloš Forman",1975,"One Flew Over the Cuckoo's Nest (film)","Miloš Forman","Klasyczny dramat o wolności."]
 ];
 
-const band=[
-['The Beatles','Wielka Brytania','The Beatles','Zespół, który zmienił historię muzyki popularnej.','Nowe podejście do albumów i popkultury.'],
-['Queen','Wielka Brytania','Queen (band)','Rock, teatralność i niezwykła charyzma.','Jedna z najbardziej rozpoznawalnych grup świata.'],
-['ABBA','Szwecja','ABBA','Szwedzki kwartet o globalnej popularności.','Pop, który przekracza granice pokoleń.'],
-['Pink Floyd','Wielka Brytania','Pink Floyd','Rock progresywny i widowiskowe koncerty.','Albumy jako spójne artystyczne opowieści.'],
-['Nirvana','Stany Zjednoczone','Nirvana (band)','Grunge i głos pokolenia lat 90.','Zmienili oblicze rocka alternatywnego.'],
-['Maanam','Polska','Maanam','Charyzmatyczna Kora i polska nowa fala.','Jeden z symboli polskiego rocka.'],
-['Republika','Polska','Republika (band)','Charakterystyczne brzmienie i styl Grzegorza Ciechowskiego.','Ważny punkt polskiej muzyki lat 80.'],
-['Perfect','Polska','Perfect (Polish band)','Jedna z najpopularniejszych polskich grup rockowych.','Muzyka silnie związana z przemianami społecznymi.'],
-['Czesław Niemen','Polska','Czesław Niemen','Wyjątkowy głos i muzyczne eksperymenty.','Artysta, który przesuwał granice polskiej muzyki.']
+const musicians=[
+["The Beatles","Wielka Brytania","The Beatles","Zespół, który zmienił muzykę popularną."],
+["Queen","Wielka Brytania","Queen (band)","Rock, teatralność i Freddie Mercury."],
+["ABBA","Szwecja","ABBA","Jedna z najważniejszych grup popowych."],
+["Pink Floyd","Wielka Brytania","Pink Floyd","Rock progresywny i albumy koncepcyjne."],
+["Nirvana","USA","Nirvana (band)","Symbol grunge'u i lat 90."],
+["Maanam","Polska","Maanam","Kora i historia polskiego rocka."],
+["Republika","Polska","Republika (band)","Charakterystyczny styl Grzegorza Ciechowskiego."],
+["Perfect","Polska","Perfect (Polish band)","Legendarna polska grupa rockowa."],
+["Czesław Niemen","Polska","Czesław Niemen","Wyjątkowy głos i muzyczne eksperymenty."]
 ];
 
-function el(tag,cls,text){
-const n=document.createElement(tag);
-if(cls)n.className=cls;
-if(text!==undefined)n.textContent=text;
-return n;
+function node(tag,className,text){
+ const n=document.createElement(tag);
+ if(className)n.className=className;
+ if(text!==undefined)n.textContent=text;
+ return n;
 }
 
-function render(id,rows,kind){
-const root=document.getElementById(id);
+async function wikipediaPhoto(title){
+ const endpoint="https://en.wikipedia.org/w/api.php?";
+ const params=new URLSearchParams({
+  action:"query",
+  format:"json",
+  formatversion:"2",
+  prop:"pageimages",
+  piprop:"thumbnail",
+  pithumbsize:"850",
+  pilicense:"free",
+  redirects:"1",
+  titles:title,
+  origin:"*"
+ });
+ try{
+  const response=await fetch(endpoint+params);
+  if(!response.ok)return null;
+  const data=await response.json();
+  const page=data.query?.pages?.[0];
+  if(!page?.thumbnail?.source)return null;
+  return {
+   url:page.thumbnail.source,
+   source:"https://en.wikipedia.org/wiki/"+encodeURIComponent(page.title.replaceAll(" ","_"))
+  };
+ }catch(e){
+  return null;
+ }
+}
 
-rows.forEach(([title,by,wiki,desc,why])=>{
-const card=el('article','piece');
-const visual=el('div','visual');
-const fallback=el('div','placeholder',title);
-const img=el('img');
+async function commonsPhoto(searchTerm){
+ const params=new URLSearchParams({
+  action:"query",
+  format:"json",
+  formatversion:"2",
+  generator:"search",
+  gsrsearch:"filetype:bitmap "+searchTerm,
+  gsrnamespace:"6",
+  gsrlimit:"8",
+  prop:"imageinfo",
+  iiprop:"url|extmetadata",
+  iiurlwidth:"850",
+  origin:"*"
+ });
+ try{
+  const response=await fetch("https://commons.wikimedia.org/w/api.php?"+params);
+  if(!response.ok)return null;
+  const data=await response.json();
+  const pages=data.query?.pages||[];
+  for(const page of pages){
+   const info=page.imageinfo?.[0];
+   if(!info?.thumburl||!info?.descriptionurl)continue;
+   const license=info.extmetadata?.LicenseShortName?.value||"";
+   const allowed=/CC BY|CC0|Public domain|PDM|CC-BY|CC BY-SA/i.test(license);
+   if(!allowed)continue;
+   if(!/\.(jpg|jpeg|png|webp)$/i.test(page.title))continue;
+   return {url:info.thumburl,source:info.descriptionurl};
+  }
+ }catch(e){}
+ return null;
+}
 
-img.alt=kind==='art'
-?'Reprodukcja: '+title
-:'Zdjęcie związane z: '+title;
+function showPhoto(photo,img,fallback,label,link,caption){
+ if(!photo)return false;
+ img.onload=()=>{
+  img.classList.add("loaded");
+  fallback.style.display="none";
+  if(caption){
+   label.textContent=caption;
+   label.classList.add("visible");
+  }
+  link.href=photo.source;
+  link.hidden=false;
+ };
+ img.onerror=()=>{img.classList.remove("loaded");};
+ img.src=photo.url;
+ return true;
+}
 
-img.loading='lazy';
-visual.append(fallback,img);
+function createCard(root,title,subtitle,description,kind){
+ const card=node("article","card");
+ const visual=node("div","photo");
+ const img=node("img");
+ img.alt="Ilustracja: "+title;
+ img.loading="lazy";
+ const fallback=node("div","fallback",title);
+ const label=node("span","photo-label");
+ visual.append(img,fallback,label);
 
-const info=el('div','info');
+ const info=node("div","info");
+ info.append(
+  node("small","",subtitle),
+  node("h3","",title),
+  node("p","why",description)
+ );
+ const link=node("a","source","Zdjęcie — źródło i licencja");
+ link.hidden=true;
+ link.target="_blank";
+ link.rel="noopener noreferrer";
+ info.append(link);
+ card.append(visual,info);
+ root.append(card);
 
-info.append(
-el('small','',by),
-el('h3','',title),
-el('p','',desc),
-el('p','why',why)
-);
+ return {img,fallback,label,link};
+}
 
-const credit=el('p','credit');
-info.append(credit);
-card.append(visual,info);
-root.append(card);
+async function setImage(view,candidates){
+ for(const candidate of candidates){
+  let photo=null;
+  if(candidate.type==="wiki"){
+   photo=await wikipediaPhoto(candidate.term);
+  }else{
+   photo=await commonsPhoto(candidate.term);
+  }
+  if(!photo)continue;
 
-loadImage(wiki,img,fallback,credit);
+  const works=await new Promise(resolve=>{
+   const test=new Image();
+   test.onload=()=>resolve(true);
+   test.onerror=()=>resolve(false);
+   test.src=photo.url;
+  });
+
+  if(works){
+   showPhoto(
+    photo,
+    view.img,
+    view.fallback,
+    view.label,
+    view.link,
+    candidate.caption
+   );
+   return;
+  }
+ }
+}
+
+const artRoot=document.getElementById("artGrid");
+paintings.forEach(([title,artist,wiki,description])=>{
+ const view=createCard(artRoot,title,artist,description,"art");
+ setImage(view,[
+  {type:"wiki",term:wiki,caption:"Reprodukcja dzieła"}
+ ]);
 });
-}
 
-async function loadImage(wiki,img,fallback,credit){
-const url='https://en.wikipedia.org/w/api.php?'+
-new URLSearchParams({
-action:'query',
-format:'json',
-formatversion:'2',
-prop:'pageimages',
-piprop:'thumbnail',
-pithumbsize:'750',
-pilicense:'free',
-redirects:'1',
-titles:wiki,
-origin:'*'
+const movieRoot=document.getElementById("filmGrid");
+movies.forEach(([title,director,year,filmWiki,directorWiki,description])=>{
+ const view=createCard(
+  movieRoot,title,director+" · "+year,description,"film"
+ );
+
+ setImage(view,[
+  {
+   type:"wiki",
+   term:filmWiki,
+   caption:"Zdjęcie związane z filmem"
+  },
+  {
+   type:"wiki",
+   term:directorWiki,
+   caption:"Na zdjęciu: reżyser filmu"
+  },
+  {
+   type:"commons",
+   term:directorWiki+" portrait",
+   caption:"Fotografia reżysera"
+  }
+ ]);
 });
 
-try{
-const response=await fetch(url);
-if(!response.ok)throw Error('Brak połączenia');
-
-const json=await response.json();
-const src=json.query?.pages?.[0]?.thumbnail?.source;
-
-if(!src)return;
-
-img.onload=()=>{
-img.classList.add('ready');
-fallback.style.display='none';
-
-const a=el('a','','Źródło zdjęcia: Wikipedia');
-a.href='https://en.wikipedia.org/wiki/'+
-encodeURIComponent(wiki.replaceAll(' ','_'));
-a.target='_blank';
-a.rel='noopener noreferrer';
-credit.append(a);
-};
-
-img.onerror=()=>{img.remove();};
-img.src=src;
-
-}catch(e){
-/* Pozostaje pastelowa plansza */
-}
-}
-
-render('art',art,'art');
-render('film',film,'film');
-render('band',band,'band');
+const bandRoot=document.getElementById("bandGrid");
+musicians.forEach(([title,country,wiki,description])=>{
+ const view=createCard(bandRoot,title,country,description,"music");
+ setImage(view,[
+  {type:"wiki",term:wiki,caption:"Artysta lub zespół"},
+  {type:"commons",term:title+" band",caption:"Fotografia związana z artystą"}
+ ]);
+});
 </script>
-
 </body>
 </html>
