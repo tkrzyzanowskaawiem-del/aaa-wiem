@@ -34,3 +34,8 @@
 .breadcrumbs {
   display: none !important;
 }
+
+.art-index,
+.hero-note strong {
+  display: none !important;
+}
