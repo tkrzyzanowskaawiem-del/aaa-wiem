@@ -11,3 +11,15 @@
 .gallery .art-card:nth-child(6) .art-frame img { max-height:320px !important; }
 .gallery .art-meta { max-width:100% !important; }
 @media(max-width:700px){ .gallery { gap:30px 15px !important; } .gallery .art-card { max-width:calc(50% - 10px) !important; } .gallery .art-frame { border-width:5px !important; } .gallery .art-frame img { max-width:100% !important; max-height:240px !important; } }
+
+/* Ukrycie numeracji obrazów */
+.art-number,
+.art-num,
+.painting-number,
+.painting-num,
+.artwork-number,
+.artwork-index,
+.gallery-number,
+.gallery-index {
+  display: none !important;
+}
