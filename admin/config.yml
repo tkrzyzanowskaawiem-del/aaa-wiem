@@ -1,0 +1,65 @@
+
+backend:
+  name: github
+  repo: tkrzyzanowskaawiem-del/aaa-wiem
+  branch: main
+
+publish: true
+
+media_folder: "images"
+public_folder: "/aaa-wiem/images"
+
+locale: "pl"
+
+collections:
+  - name: "artykuly"
+    label: "Artykuły"
+    label_singular: "Artykuł"
+    folder: "content/artykuly"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    identifier_field: "title"
+    editor:
+      preview: false
+    fields:
+      - label: "Tytuł artykułu"
+        name: "title"
+        widget: "string"
+
+      - label: "Kategoria"
+        name: "category"
+        widget: "select"
+        options:
+          - "Historia"
+          - "Polityka"
+          - "Gospodarka"
+          - "Nauka"
+          - "Geografia"
+          - "Kultura"
+          - "Społeczeństwo"
+
+      - label: "Krótki opis"
+        name: "description"
+        widget: "text"
+
+      - label: "Zdjęcie główne"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Treść artykułu"
+        name: "body"
+        widget: "markdown"
+
+      - label: "Wyróżnij na stronie głównej"
+        name: "featured"
+        widget: "boolean"
+        default: false
+
+      - label: "Opublikowany"
+        name: "published"
+        widget: "boolean"
+        default: true
