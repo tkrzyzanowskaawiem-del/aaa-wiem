@@ -2,11 +2,171 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Panel redakcyjny — AAA, WIEM!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panel redakcyjny — AAA, WIEM!</title>
+<style>
+:root{--bg:#faf7f5;--ink:#493936;--blue:#dceaf4;--pink:#f2dfe5;--line:#e6dad5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif}
+header{padding:22px 6%;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-family:Georgia,serif;font-size:28px;font-weight:bold}
+a{color:inherit}
+main{max-width:850px;margin:45px auto;padding:0 20px 70px}
+h1{font-family:Georgia,serif;font-size:clamp(32px,5vw,48px);margin:0 0 10px}
+p{line-height:1.6}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:28px;margin-top:24px}
+label{display:block;font-weight:700;font-size:14px;margin:20px 0 8px}
+input,select,textarea{width:100%;border:1px solid #d8cbc7;border-radius:11px;padding:14px;font:inherit;color:var(--ink);background:#fff}
+textarea{min-height:330px;resize:vertical;line-height:1.7}
+input:focus,select:focus,textarea:focus{outline:2px solid #b9d6e8}
+button{background:#493936;color:white;border:0;border-radius:12px;padding:16px 26px;font:inherit;font-weight:bold;cursor:pointer}
+button:disabled{opacity:.5;cursor:wait}
+small{color:#796c68;line-height:1.6;display:block;margin-top:8px}
+.status{margin-top:18px;padding:15px;border-radius:12px;background:var(--blue);display:none;white-space:pre-wrap;overflow-wrap:anywhere}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.check{display:flex;align-items:center;gap:10px}
+.check input{width:auto}
+@media(max-width:600px){.row{grid-template-columns:1fr}.card{padding:19px}}
+</style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
+<header>
+ <div class="logo">aaa, wiem!</div>
+ <a href="../index.html">Zobacz stronę</a>
+</header>
+<main>
+ <h1>Nowy artykuł.</h1>
+ <p>Wypełnij pola i opublikuj tekst na AAA, WIEM!</p>
+
+ <form id="editor" class="card">
+  <label for="title">Tytuł</label>
+  <input id="title" required placeholder="Np. Dlaczego upadło Cesarstwo Rzymskie?">
+
+  <div class="row">
+   <div>
+    <label for="category">Kategoria</label>
+    <select id="category">
+     <option>Historia</option><option>Polityka</option>
+     <option>Gospodarka</option><option>Nauka</option>
+     <option>Geografia</option><option>Kultura</option>
+     <option>Społeczeństwo</option>
+    </select>
+   </div>
+   <div>
+    <label for="image">Adres zdjęcia (https://)</label>
+    <input id="image" type="url" placeholder="https://...">
+   </div>
+  </div>
+
+  <label for="description">Krótki opis do biblioteki</label>
+  <textarea id="description" required style="min-height:110px" placeholder="2–3 zdania zachęcające do przeczytania"></textarea>
+
+  <label for="body">Treść artykułu</label>
+  <textarea id="body" required placeholder="Wklej cały artykuł.
+
+## Śródtytuł
+
+Treść kolejnego akapitu...
+
+## Warto zapamiętać
+
+Najważniejsze informacje..."></textarea>
+  <small>Nowy akapit oddziel pustą linią. Śródtytuły zaczynaj od ## i spacji.</small>
+
+  <label class="check">
+   <input id="featured" type="checkbox">
+   Wyróżnij ten artykuł na stronie głównej
+  </label>
+
+  <hr style="border:0;border-top:1px solid var(--line);margin:30px 0">
+
+  <h2>Publikowanie</h2>
+  <p>Token GitHuba jest używany wyłącznie do wysłania zmian do Twojego repozytorium. Panel nie zapisuje go w przeglądarce.</p>
+
+  <label for="token">Token GitHub</label>
+  <input id="token" type="password" required autocomplete="off" placeholder="github_pat_...">
+  <small>Użyj tokenu fine-grained z dostępem tylko do repozytorium aaa-wiem i uprawnieniem Contents: Read and write. Nigdy nie wysyłaj tokenu w wiadomości.</small>
+
+  <div style="margin-top:25px">
+   <button id="publish" type="submit">Opublikuj artykuł</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+ </form>
+</main>
+<script>
+const REPO='tkrzyzanowskaawiem-del/aaa-wiem';
+const API='https://api.github.com/repos/'+REPO+'/contents/artykuly.json';
+const $=id=>document.getElementById(id);
+const enc=text=>btoa(Array.from(new TextEncoder().encode(text),b=>String.fromCharCode(b)).join(''));
+const dec=text=>new TextDecoder().decode(Uint8Array.from(atob(text.replace(/\s/g,'')),c=>c.charCodeAt(0)));
+const slugify=s=>s.toLowerCase().normalize('NFD')
+ .replace(/[\u0300-\u036f]/g,'')
+ .replace(/ł/g,'l')
+ .replace(/[^a-z0-9]+/g,'-')
+ .replace(/^-|-$/g,'').slice(0,75);
+function status(message){$('status').style.display='block';$('status').textContent=message;}
+async function request(url,token,options={}){
+ const response=await fetch(url,{
+  ...options,
+  headers:{
+   'Accept':'application/vnd.github+json',
+   'Authorization':'Bearer '+token,
+   'X-GitHub-Api-Version':'2022-11-28',
+   ...(options.headers||{})
+  }
+ });
+ const data=await response.json().catch(()=>({}));
+ if(!response.ok)throw Error(data.message||'Błąd GitHub: '+response.status);
+ return data;
+}
+$('editor').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const button=$('publish');
+ button.disabled=true;
+ status('Publikuję artykuł...');
+ try{
+  const token=$('token').value.trim();
+  const title=$('title').value.trim();
+  const image=$('image').value.trim();
+  if(image&&!/^https:\/\//i.test(image))throw Error('Zdjęcie musi mieć adres HTTPS.');
+  const current=await request(API,token);
+  const articles=JSON.parse(dec(current.content));
+  if(!Array.isArray(articles))throw Error('Plik artykuly.json ma nieprawidłowy format.');
+  const base=slugify(title)||'nowy-artykul';
+  let slug=base,n=2;
+  while(articles.some(a=>a.slug===slug))slug=base+'-'+n++;
+  const featured=$('featured').checked;
+  if(featured)articles.forEach(a=>a.featured=false);
+  articles.unshift({
+   slug,
+   title,
+   category:$('category').value,
+   description:$('description').value.trim(),
+   image,
+   body:$('body').value.trim(),
+   dynamic:true,
+   featured,
+   published:true
+  });
+  await request(API,token,{
+   method:'PUT',
+   headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({
+    message:'Dodaj artykul: '+title,
+    content:enc(JSON.stringify(articles,null,2)+'\n'),
+    sha:current.sha,
+    branch:'main'
+   })
+  });
+  const url=new URL('../artykul.html',location.href);
+  url.searchParams.set('slug',slug);
+  status('Artykuł zapisany w GitHubie!\nPo opublikowaniu zmian przez GitHub Pages będzie dostępny tutaj:\n'+url.href);
+  $('token').value='';
+ }catch(error){
+  status('Nie udało się opublikować: '+error.message);
+ }finally{button.disabled=false;}
+});
+</script>
 </body>
 </html>
