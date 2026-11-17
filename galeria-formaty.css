@@ -23,3 +23,9 @@
 .gallery-index {
   display: none !important;
 }
+.art-index {
+  display: none !important;
+}
+.hero-note strong {
+  display: none !important;
+}
