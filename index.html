@@ -1,2 +1,125 @@
+
 <!DOCTYPE html>
-<html lang="pl"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="AAA, WIEM! — historia, polityka, kultura i nauka wyjaśnione po ludzku." name="description"/><title>AAA, WIEM! — Świat wyjaśniony po ludzku</title><link href="style.css" rel="stylesheet"/></head><body><header><div class="wrap nav"><a class="logo" href="index.html" style="text-decoration:none">aaa, wiem<span>!</span></a><nav><button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Start</button><button onclick="document.getElementById('odkrywaj').scrollIntoView({behavior:'smooth'})">Odkrywaj</button><button onclick="document.getElementById('quizy').scrollIntoView({behavior:'smooth'})">Quizy</button></nav></div></header><main class="wrap"><section class="intro-panel" id="start"><span class="tag">Świat wyjaśniony po ludzku</span><h1>Rozumiej świat <em>lepiej.</em></h1><p class="lead">Historia, współczesność, nauka i kultura — bez trudnego języka, za to z sensem.</p></section><section class="feature-layout" id="featured"></section><section id="odkrywaj"><span class="tag">Biblioteka wiedzy</span><h2>Odkryj coś nowego.</h2><p class="muted">Dziesięć pierwszych artykułów. Wybierz kategorię albo wyszukaj temat.</p><input aria-label="Wyszukaj artykuły" class="searchbar" id="search" placeholder="Czego chcesz się dowiedzieć?" type="search"/><div class="pills"><button class="pill active" data-filter="Wszystkie">Wszystkie</button><button class="pill" data-filter="Historia">Historia</button><button class="pill" data-filter="Polityka">Polityka</button><button class="pill" data-filter="Gospodarka">Gospodarka</button><button class="pill" data-filter="Nauka">Nauka</button><button class="pill" data-filter="Geografia">Geografia</button><button class="pill" data-filter="Kultura">Kultura</button><button class="pill" data-filter="Społeczeństwo">Społeczeństwo</button></div><div class="article-grid" id="stories"></div><p id="loading">Wczytywanie artykułów…</p><p hidden="" id="noresults">Nie znaleziono artykułów. Spróbuj innego hasła.</p></section><section id="quizy"><span class="tag">Sprawdź swoją wiedzę</span><h2>Quiz dnia</h2><div class="quizbox"><h3>W którym roku upadł Mur Berliński?</h3><button onclick="answer(false)">1961</button><button onclick="answer(true)">1989</button><button onclick="answer(false)">1991</button><p aria-live="polite" class="quizresult" id="quizresult"></p></div></section></main><footer class="sitefoot"><div class="wrap"><strong>aaa, wiem!</strong> · Świat wyjaśniony po ludzku. <span class="muted">Pierwsza wersja portalu.</span></div></footer><script defer="True" src="app.js"></script></body></html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AAA, WIEM! — historia, polityka, kultura i nauka wyjaśnione po ludzku.">
+  <title>AAA, WIEM! — Świat wyjaśniony po ludzku</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html" style="text-decoration:none">
+      aaa, wiem<span>!</span>
+    </a>
+    <nav>
+      <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Start</button>
+      <button onclick="document.getElementById('odkrywaj').scrollIntoView({behavior:'smooth'})">Odkrywaj</button>
+      <a href="galeria-sztuki.html" style="text-decoration:none;color:inherit;font:inherit;padding:10px 12px">Galeria sztuki</a>
+      <button onclick="document.getElementById('quizy').scrollIntoView({behavior:'smooth'})">Quizy</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="intro-panel" id="start">
+    <span class="tag">Świat wyjaśniony po ludzku</span>
+    <h1>Rozumiej świat <em>lepiej.</em></h1>
+    <p class="lead">
+      Historia, współczesność, nauka i kultura — bez trudnego języka, za to z sensem.
+    </p>
+  </section>
+
+  <section class="feature-layout" id="featured"></section>
+
+  <section id="odkrywaj">
+    <span class="tag">Biblioteka wiedzy</span>
+    <h2>Odkryj coś nowego.</h2>
+    <p class="muted">
+      Dziesięć pierwszych artykułów. Wybierz kategorię albo wyszukaj temat.
+    </p>
+
+    <input
+      aria-label="Wyszukaj artykuły"
+      class="searchbar"
+      id="search"
+      placeholder="Czego chcesz się dowiedzieć?"
+      type="search"
+    >
+
+    <div class="pills">
+      <button class="pill active" data-filter="Wszystkie">Wszystkie</button>
+      <button class="pill" data-filter="Historia">Historia</button>
+      <button class="pill" data-filter="Polityka">Polityka</button>
+      <button class="pill" data-filter="Gospodarka">Gospodarka</button>
+      <button class="pill" data-filter="Nauka">Nauka</button>
+      <button class="pill" data-filter="Geografia">Geografia</button>
+      <button class="pill" data-filter="Kultura">Kultura</button>
+      <button class="pill" data-filter="Społeczeństwo">Społeczeństwo</button>
+    </div>
+
+    <div class="article-grid" id="stories"></div>
+    <p id="loading">Wczytywanie artykułów…</p>
+    <p hidden id="noresults">
+      Nie znaleziono artykułów. Spróbuj innego hasła.
+    </p>
+  </section>
+
+  <!-- GALERIA SZTUKI -->
+  <section id="galeria" style="padding:65px 0">
+    <span class="tag">Kultura i sztuka</span>
+    <h2>Obrazy, które zmieniły historię sztuki.</h2>
+    <p class="muted" style="max-width:650px;line-height:1.8">
+      Znasz Monę Lisę, Gwiaździstą noc czy Krzyk.
+      Ale czy wiesz, jakie historie kryją się za tymi dziełami?
+      Odkryj naszą wirtualną galerię i poznaj malarstwo
+      z zupełnie innej perspektywy.
+    </p>
+
+    <a
+      href="galeria-sztuki.html"
+      style="
+        display:inline-block;
+        margin-top:22px;
+        padding:15px 25px;
+        border-radius:12px;
+        background:#234d40;
+        color:white;
+        text-decoration:none;
+        font-weight:600;
+        font-size:15px;
+      "
+    >
+      Odkryj galerię →
+    </a>
+  </section>
+
+  <section id="quizy">
+    <span class="tag">Sprawdź swoją wiedzę</span>
+    <h2>Quiz dnia</h2>
+    <div class="quizbox">
+      <h3>W którym roku upadł Mur Berliński?</h3>
+      <button onclick="answer(false)">1961</button>
+      <button onclick="answer(true)">1989</button>
+      <button onclick="answer(false)">1991</button>
+      <p aria-live="polite" class="quizresult" id="quizresult"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap">
+    <strong>aaa, wiem!</strong> · Świat wyjaśniony po ludzku.
+    <span class="muted">Pierwsza wersja portalu.</span>
+  </div>
+</footer>
+
+<script defer src="app.js"></script>
+
+</body>
+</html>
