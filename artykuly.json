@@ -1,5 +1,16 @@
 [
   {
+    "slug": "gtfh",
+    "title": "gtfh",
+    "category": "Historia",
+    "description": "tghfr",
+    "image": "",
+    "body": "gtr",
+    "dynamic": true,
+    "featured": false,
+    "published": true
+  },
+  {
     "slug": "amnezja-dziecieca",
     "title": "Dlaczego nie pamiętamy pierwszych lat życia?",
     "category": "Nauka",
